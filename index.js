@@ -3,6 +3,8 @@ const express = require('express');
 const multer = require('multer');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config(); // Add this to read .env locally
+
 const app = express();
 const PORT = 5000;
 
