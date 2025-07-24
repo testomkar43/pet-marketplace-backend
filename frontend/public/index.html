@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Marketplace</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Pet Marketplace</h1>
+
+    <!-- Login/Register Forms -->
+    <div id="auth-section">
+      <h2 id="auth-title">Login</h2>
+      <form id="auth-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit" id="auth-btn">Login</button>
+        <p id="switch-auth">Don't have an account? <span id="toggle-auth">Register</span></p>
+      </form>
+    </div>
+
+    <!-- Pet Submission Form -->
+    <div id="pet-form-section" style="display:none;">
+      <h2>Submit a Pet for Adoption</h2>
+      <form id="pet-form" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Pet Name" required />
+        <input type="text" name="breed" placeholder="Breed" required />
+        <input type="text" name="age" placeholder="Age" required />
+        <input type="text" name="location" placeholder="Location" required />
+        <textarea name="description" placeholder="Description" required></textarea>
+        <input type="file" name="images" multiple required />
+        <button type="submit">Submit Pet</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
