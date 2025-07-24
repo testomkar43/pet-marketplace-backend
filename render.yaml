@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pet-marketplace-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: mongodb+srv://data:<omkar@123>@cluster0.fermedn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+        value: YOUR_MONGODB_ATLAS_URI_HERE
+      - key: JWT_SECRET
+        value: your_secret_key
