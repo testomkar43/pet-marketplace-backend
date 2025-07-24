@@ -1,0 +1,13 @@
+# render.yaml
+services:
+  - type: web
+    name: pet-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://data:<omkar@123>@cluster0.fermedn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - key: JWT_SECRET
+        value: mitr_backend_secret_123!
