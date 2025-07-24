@@ -48,4 +48,10 @@ app.get('/api/pets', async (req, res) => {
   res.json(pets);
 });
 
+// ✅ Add this root route to handle "/"
+app.get('/', (req, res) => {
+  res.send('🐾 Welcome to the Pet Marketplace API! Use /api/pets to see all pets.');
+});
+
+// ✅ Start server
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
