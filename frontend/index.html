@@ -10,18 +10,18 @@
   <div class="container">
     <h1>🐾 Pet Marketplace</h1>
 
-    <!-- Login/Register Forms -->
+    <!-- Auth Section -->
     <div id="auth-section">
       <h2 id="auth-title">Login</h2>
       <form id="auth-form">
         <input type="text" id="username" placeholder="Username" required />
-        <input type="password" id="password" placeholder="Password" required />
+        <input type="password" id="password" placeholder="Password" required minlength="6"/>
         <button type="submit" id="auth-btn">Login</button>
         <p id="switch-auth">Don't have an account? <span id="toggle-auth">Register</span></p>
       </form>
     </div>
 
-    <!-- Pet Submission Form -->
+    <!-- Pet Form (only after login) -->
     <div id="pet-form-section" style="display:none;">
       <h2>Submit a Pet for Adoption</h2>
       <form id="pet-form" enctype="multipart/form-data">

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e0e0e0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#auth-section, #pet-form-section {
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #434190;
+}
+
+#switch-auth {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+#toggle-auth {
+  color: #5a67d8;
+  cursor: pointer;
+  font-weight: bold;
+}
