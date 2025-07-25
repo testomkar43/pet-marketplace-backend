@@ -1,19 +1,18 @@
-import React, { useState } from "react";
-import AuthForm from "./components/AuthForm";
-import PetForm from "./components/PetForm";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Register from './components/Register';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-
   return (
-    <div className="container">
-      <h1>🐾 Pet Marketplace</h1>
-      {!loggedIn ? (
-        <AuthForm onLoginSuccess={() => setLoggedIn(true)} />
-      ) : (
-        <PetForm />
-      )}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
